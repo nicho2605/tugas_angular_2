@@ -8,8 +8,8 @@ import { AppComponent } from '../app.component';
 export class EditComponent implements OnInit {
 
   constructor(private appComponent: AppComponent) { }
-
+  list=[]
   ngOnInit() {
+    this.list = this.appComponent.getList();
   }
-
 }

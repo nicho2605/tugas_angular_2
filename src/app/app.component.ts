@@ -27,4 +27,13 @@ export class AppComponent  {
   getList(){
     return this.listJurusan;    
   }
+  edit(jur,desk){
+    for(let i = 0;i<this.listJurusan.length;i++)
+    {
+      if(this.listJurusan[i][0] == jur)
+      {
+        this.listJurusan[i][1] = desk;
+      }
+    }
+  }
 }

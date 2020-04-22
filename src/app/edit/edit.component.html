@@ -1,8 +1,17 @@
 <div>
-<p>
-edit works!
-</p>
-<p>
-INI TEMPORARY, MW COBA COMMIT
-</p>
+<br> Edit Deksripsi Jurusan
+<br>Input Jurusan yang mau diedit : <br>
+<input [(ngModel)] ="jurusan" type="text">
+<br/>
+Input Deskripsi Jurusan :<br>
+<textarea [(ngModel)] ="deskripsi" type="text"></textarea>
+<br/>
+<br>
+<button (click)="appComponent.edit(jurusan,deskripsi)">Simpan</button>
+</div>
+<br>
+List Jurusan
+<br>
+<div *ngFor = "let row of list">
+  {{row[0]}} | Deskripsi : {{row[1]}}
 </div>
