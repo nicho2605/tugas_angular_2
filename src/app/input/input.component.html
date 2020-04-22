@@ -1,5 +1,13 @@
 <div>
-<p>
-INI TEMPORARY, MW COBA COMMIT
-</p>
+Input Jurusan : <br>
+<input [(ngModel)] ="jurusan" type="text">
+<br/>
+Input Deskripsi Jurusan :<br>
+<textarea [(ngModel)] ="deskripsi" type="text"></textarea>
+<br/>
+<br>
+<button (click)="appComponent.input(jurusan,deskripsi)">Simpan</button>
+</div>
+<div>
+  {{jurusan}}<br>{{deskripsi}}
 </div>
