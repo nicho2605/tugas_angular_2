@@ -24,4 +24,7 @@ export class AppComponent  {
     this.temp = [jur,desk];
     this.listJurusan.push(this.temp);
   }
+  getList(){
+    return this.listJurusan;    
+  }
 }
